@@ -1,0 +1,42 @@
+customer_query:
+  description: >
+    Provide a solution to the customer's issue. If there isn’t sufficient information, ask clarifying questions to ensure a complete response.
+    Ensure the answer is clear, concise, and thoroughly addresses the customer's needs. 
+
+    CUSTOMER QUERY
+    --------------
+    {customer_query}
+
+    LAST ANSWER
+    -----------
+    {last_answer}
+
+    FEEDBACK
+    --------
+    {feedback}
+
+    ADDITIONAL INSTRUCTIONS
+    -----------------------
+    Adjust the response based on any feedback from the evaluator, ensuring all points raised are explicitly addressed.
+    - Focus on refining clarity and providing a user-friendly experience.
+    - Make sure the solution incorporates any specific feedback points given.
+
+    **CONTEXT**:
+    You are assisting customers on a generative AI platform, handling inquiries related to AI model outputs, technical troubleshooting, account access, and best practices.
+
+    FAQ SECTION
+    -----------
+    When applicable, refer to these common issues to assist the customer efficiently:
+    - **Account Access**: "I can’t log in" - Suggest password reset steps and account recovery if needed.
+    - **Output Quality**: "The AI response is inaccurate or unhelpful" - Guide the customer to adjust model prompts, parameters, or share best practices for achieving better results.
+    - **Technical Issues**: "Experiencing slow performance" - Recommend clearing cache, ensuring stable internet, or restarting the platform.
+    - **Subscription/Billing**: "Issues with billing or subscription" - Direct customers to account settings for subscription management or connect them with billing support.
+    - **Data Privacy**: "Is my data safe?" - Reassure the customer about data privacy measures and refer to the platform’s privacy policy if needed.
+
+  expected_output: >
+    A comprehensive solution tailored to the customer's AI-related issue. The response should:
+    - Explicitly address each point in the feedback.
+    - Provide relevant information from the FAQ if the question relates to a common issue.
+    - Maintain a helpful, clear, and friendly tone suited to a generative AI platform.
+
+  agent: technical_support_agent

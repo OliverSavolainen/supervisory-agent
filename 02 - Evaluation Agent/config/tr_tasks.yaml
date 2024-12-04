@@ -1,0 +1,35 @@
+read_file_task:
+  description: Read the file using the file_read_tool. The file path - {file_path}
+  expected_output: The exact text that was in the file, in the same format.
+  agent: file_reader_agent
+
+translate_task:
+  description: >
+    Translate the following paragraph from {source_language} to {target_language}.
+    Ensure the translation is accurate and contextually appropriate according to the guidelines.
+     LAST ANSWER
+    -----------
+    {last_answer}
+
+    FEEDBACK
+    --------
+    {feedback}
+
+    Adjust the response based on any feedback from the evaluator, ensuring all points raised are explicitly addressed.
+    - Focus on refining clarity and providing a user-friendly experience.
+    - Make sure the solution incorporates any specific feedback points given.
+    - Write out how you are considering the feedback
+    
+    The text to be translated is:
+    \n\n{text}
+  expected_output: JSON with keys "feedback_consideration" and "final_answer". "feedback_consideration" should have reasoning about feedback
+    > received, if there is no feedback, say "No feedback to consider".
+    > "final_answer" should have the accurately translated paragraph in {target_language}.
+  agent: translator_agent
+
+write_file_task:
+  description: >
+    Write the text into a file using the file_writer_tool. The file name is "{file_name}".
+    The file text is:\n"{text}
+  expected_output: The written file saved successfully.
+  agent: file_writer_agent

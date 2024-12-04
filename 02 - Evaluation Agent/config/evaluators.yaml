@@ -1,0 +1,68 @@
+TranslationEvaluator:
+  name: "Translation"
+  description: |
+    This Translation evaluator assesses whether the provided translation accurately conveys the meaning, tone, and style of the original text. It is particularly useful for tasks like adapting marketing content, user manuals, or legal documents into different languages while maintaining the intended message and cultural nuances.
+
+    For example, if the original text says "The early bird catches the worm" and the translation into Spanish is "El pájaro temprano atrapa el gusano," the evaluator will check whether the literal translation is appropriate or whether a more culturally relevant phrase, like "A quien madruga, Dios le ayuda," would better convey the intended meaning.
+
+    The evaluator analyzes key aspects such as accuracy, completeness, grammar, vocabulary choice, cultural adaptation, and tone to determine if the translation aligns with the original. Based on this assessment, it assigns a score from 1 to 10, with higher scores reflecting a more accurate and culturally sensitive translation. The explanation provides detailed reasoning for the score, pointing out any issues with the translation or suggesting improvements.
+
+    The result is a JSON object containing two keys:
+
+    explanation: A detailed reasoning for the score, explaining why the translation is accurate or suggesting improvements.
+
+    score: A value between 1 and 10, based on the overall quality of the translation.
+  prompt_template: |
+    You are an AI assistant specialized in evaluating translations. Your task is to assess the quality of a translation based on several key factors. Analyze the [TEXT], which includes both the original and the translated text.
+
+    Evaluation Criteria:
+    - Accuracy: Does the translation convey the exact meaning of the original?
+    - Completeness: Is every part of the original text included in the translation?
+    - Grammar and Syntax: Is the translation grammatically correct and well-structured?
+    - Vocabulary Choice: Are words and phrases appropriately selected for the context?
+    - Cultural Awareness: Has the translation adapted idioms, cultural references, or culturally specific terms effectively? Suggest alternatives when necessary.
+    - Tone and Style: Does the translation maintain the original tone, style, and level of formality?
+
+    Consider the following:
+    - Context Sensitivity: Pay attention to the source domain (e.g., legal, technical, casual) and the target audience to ensure appropriateness.
+    - Ambiguities: Flag any assumptions made due to missing context (e.g., gender, politeness level).
+    - Suggestions for Improvement: Propose alternative translations if the current one fails to meet the criteria above, particularly with cultural adaptations.
+
+    Then, create a JSON object with the keys 'explanation' and 'score'. The 'score' key should reflect the overall quality of the translation (on a scale of 1-10) based on these aspects. The 'explanation' key should contain reasoning justifying the score given. Make sure the 'explanation' always comes before the 'score'.
+
+    Examples:
+
+    1.
+    [TEXT] Translate this into French: "Ich bin müde."
+    [OUTPUT] "Je suis fatigué."
+    {{
+      "explanation": "The translation is accurate and grammatically correct. The only potential issue is gender agreement, as 'fatiguée' would be needed for a female speaker. Without more context, this translation is rated highly but not perfect.",
+      "score": 9
+    }}
+
+    2.
+    [TEXT] Translate this English text to Spanish: "The early bird catches the worm."
+    [OUTPUT] "El pájaro temprano atrapa el gusano."
+    {{
+      "explanation": "Although grammatically correct, this literal translation lacks cultural adaptation. The Spanish equivalent 'A quien madruga, Dios le ayuda' would be a more natural and culturally appropriate translation.",
+      "score": 7
+    }}
+    3.
+    [TEXT] Translate into Japanese: Good morning, how are you?
+    [OUTPUT] おはようございます、お元気ですか？
+    {{
+      "explanation": "This translation is perfect. It accurately conveys the original meaning, maintains formal tone, and uses appropriate grammar and vocabulary in Japanese.",
+      "score": 10
+    }}
+
+    4.
+    [TEXT] I need this text in French: The weather is nice today.
+    [OUTPUT] La nourriture est bonne aujourd'hui.
+    {{
+      "explanation": "This translation is entirely wrong. It translates as 'The food is good today,' which is unrelated to the original sentence about the weather. The correct translation should be 'Il fait beau aujourd'hui.' A complete revision is required.",
+      "score": 2
+    }}
+
+    Evaluate the following translation:
+    [TEXT] {{log.input}}
+    [OUTPUT] {{log.output}}

@@ -1,0 +1,39 @@
+evaluate_customer_interaction:
+  description: >
+    Evaluate the customer service agent's response to ensure it fully addresses the customer’s query with accuracy, clarity, and adherence to company standards. Use the "last_answer" provided to assess the response quality, appropriateness, and alignment with the company's FAQ. Approve only if the response meets all quality standards, and provide actionable feedback if necessary.
+
+    CUSTOMER QUERY
+    --------------
+    {customer_query}
+    
+    LAST ANSWER TO EVALUATE
+    -----------------------
+    {last_answer}
+
+    FAQ SECTION
+    -----------
+    Use the following FAQ to verify if the agent’s response aligns with established guidelines:
+    - **Account Access**: If the query is about issues logging in, recommend password reset steps and account recovery options if necessary.
+    - **Output Quality**: If the customer finds AI responses inaccurate, suggest adjusting model parameters or share best practices for prompt design to improve relevancy.
+    - **Technical Issues**: For performance issues like slow response times, advise customers to clear cache, check internet connection, or restart the platform.
+    - **Subscription/Billing**: For billing or subscription inquiries, direct customers to the account settings for subscription management or connect them with billing support if needed.
+    - **Data Privacy**: For privacy concerns, reassure customers about data protection policies and refer to the privacy policy if more details are needed.
+
+    EVALUATION CRITERIA
+    --------------------
+    Review the response carefully with the following criteria in mind:
+    - **Relevance to Customer Service**: If the question isn't actually directly related to helping the customer using the platform, the response should be a polite rejection to answer. For example, if the customer asks about politics, the response should include
+    a polite rejection and a comment about responses only being about the platform. The same goes for situations like the customer asking for the agent to write code. Again, any responses which are not directly about issues or questions about the platforms,
+    should not be approved, and polite rejections with possibly some general suggestions should be preferred.
+    - **Completeness and Relevance**: Does the response completely and accurately address the customer’s issue? Is it relevant and directly answers the query?
+    - **Clarity and Conciseness**: Is the response easy to understand, free of jargon, and concise without omitting important information?
+    - **Professional Tone**: Does the response maintain a professional, empathetic, and courteous tone consistent with the brand’s voice?
+    - **Adherence to FAQ**: If the customer query matches an FAQ item, verify that the agent referred to or correctly incorporated information from the FAQ. This ensures accuracy and consistency across responses.
+    - **Effective Use of Feedback**: If feedback from previous interactions is available, has the agent effectively integrated it to improve the quality of their response?
+
+  expected_output: >
+    Return a JSON object with:
+    - `feedback` (string): Specific, constructive feedback for the agent on how to improve clarity, completeness, tone, or professionalism. If the response did not meet quality standards, offer actionable recommendations, especially regarding FAQ adherence and any overlooked points.
+    - `approved` (boolean): True if the response meets high-quality standards, otherwise False.
+
+  agent: evaluation_agent

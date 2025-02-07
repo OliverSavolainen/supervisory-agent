@@ -1,0 +1,89 @@
+Variation,accuracy,precision,recall,f1_score,true_positives,false_positives,false_negatives,true_negatives
+Instructions from o1 Examples from o1 - General Relaxed Aggregate,0.7638888888888888,0.56,0.7,0.6222222222222222,14,11,6,41
+Instructions from o1 Examples from o1 - General Matching Aggregate,0.75,1.0,0.75,0.8571428571428571,54,0,18,0
+Instructions from o1 Examples from o1 - Gender Bias Type,0.875,0.46153846153846156,0.75,0.5714285714285714,6,7,2,57
+Instructions from o1 Examples from o1 - Disability Bias Type,0.9722222222222222,0.3333333333333333,1.0,0.5,1,2,0,69
+Instructions from o1 Examples from o1 - Race Bias Type,0.9305555555555556,0.4,0.5,0.4444444444444444,2,3,2,65
+Instructions from o1 Examples from o1 - Religion Bias Type,0.9722222222222222,1.0,0.6666666666666666,0.8,4,0,2,66
+Instructions from o1 Examples from o1 - Sexual Bias Type,0.9722222222222222,0.0,0.0,0.0,0,0,2,70
+Instructions from o1 Examples from o1 - No Bias,0.75,0.8863636363636364,0.75,0.8125,39,5,13,15
+Not Detailed Instructions Examples from o1 - General Relaxed Aggregate,0.75,0.5357142857142857,0.75,0.625,15,13,5,39
+Not Detailed Instructions Examples from o1 - General Matching Aggregate,0.7361111111111112,1.0,0.7361111111111112,0.848,53,0,19,0
+Not Detailed Instructions Examples from o1 - Gender Bias Type,0.875,0.46153846153846156,0.75,0.5714285714285714,6,7,2,57
+Not Detailed Instructions Examples from o1 - Disability Bias Type,0.9722222222222222,0.3333333333333333,1.0,0.5,1,2,0,69
+Not Detailed Instructions Examples from o1 - Race Bias Type,0.9444444444444444,0.5,0.75,0.6,3,3,1,65
+Not Detailed Instructions Examples from o1 - Religion Bias Type,0.9722222222222222,1.0,0.6666666666666666,0.8,4,0,2,66
+Not Detailed Instructions Examples from o1 - Sexual Bias Type,0.9444444444444444,0.0,0.0,0.0,0,2,2,68
+Not Detailed Instructions Examples from o1 - No Bias,0.7361111111111112,0.9024390243902439,0.7115384615384616,0.7956989247311828,37,4,15,16
+Instructions from o1 - General Relaxed Aggregate,0.6944444444444444,0.46153846153846156,0.6,0.5217391304347826,12,14,8,38
+Instructions from o1 - General Matching Aggregate,0.6944444444444444,1.0,0.6944444444444444,0.819672131147541,50,0,22,0
+Instructions from o1 - Gender Bias Type,0.8611111111111112,0.4375,0.875,0.5833333333333334,7,9,1,55
+Instructions from o1 - Disability Bias Type,0.9861111111111112,0.5,1.0,0.6666666666666666,1,1,0,70
+Instructions from o1 - Race Bias Type,0.9166666666666666,0.3333333333333333,0.5,0.4,2,4,2,64
+Instructions from o1 - Religion Bias Type,0.9444444444444444,1.0,0.3333333333333333,0.5,2,0,4,66
+Instructions from o1 - Sexual Bias Type,0.9722222222222222,0.0,0.0,0.0,0,0,2,70
+Instructions from o1 - No Bias,0.6805555555555556,0.8372093023255814,0.6923076923076923,0.7578947368421053,36,7,16,13
+Manual Instructions Examples from o1 - General Relaxed Aggregate,0.7361111111111112,0.5185185185185185,0.7,0.5957446808510638,14,13,6,39
+Manual Instructions Examples from o1 - General Matching Aggregate,0.7222222222222222,1.0,0.7222222222222222,0.8387096774193549,52,0,20,0
+Manual Instructions Examples from o1 - Gender Bias Type,0.875,0.46153846153846156,0.75,0.5714285714285714,6,7,2,57
+Manual Instructions Examples from o1 - Disability Bias Type,0.9722222222222222,0.3333333333333333,1.0,0.5,1,2,0,69
+Manual Instructions Examples from o1 - Race Bias Type,0.9166666666666666,0.3333333333333333,0.5,0.4,2,4,2,64
+Manual Instructions Examples from o1 - Religion Bias Type,0.9722222222222222,1.0,0.6666666666666666,0.8,4,0,2,66
+Manual Instructions Examples from o1 - Sexual Bias Type,0.9583333333333334,0.0,0.0,0.0,0,1,2,69
+Manual Instructions Examples from o1 - No Bias,0.7222222222222222,0.8809523809523809,0.7115384615384616,0.7872340425531915,37,5,15,15
+Examples of Every Type  Not Detailed Instructions - General Relaxed Aggregate,0.7916666666666666,0.6086956521739131,0.7,0.6511627906976745,14,9,6,43
+Examples of Every Type  Not Detailed Instructions - General Matching Aggregate,0.7638888888888888,1.0,0.7638888888888888,0.8661417322834646,55,0,17,0
+Examples of Every Type  Not Detailed Instructions - Gender Bias Type,0.8888888888888888,0.5,0.75,0.6,6,6,2,58
+Examples of Every Type  Not Detailed Instructions - Disability Bias Type,0.9722222222222222,0.3333333333333333,1.0,0.5,1,2,0,69
+Examples of Every Type  Not Detailed Instructions - Race Bias Type,0.9444444444444444,0.5,0.75,0.6,3,3,1,65
+Examples of Every Type  Not Detailed Instructions - Religion Bias Type,0.9583333333333334,1.0,0.5,0.6666666666666666,3,0,3,66
+Examples of Every Type  Not Detailed Instructions - Sexual Bias Type,0.9722222222222222,0.0,0.0,0.0,0,0,2,70
+Examples of Every Type  Not Detailed Instructions - No Bias,0.7638888888888888,0.8571428571428571,0.8076923076923077,0.8316831683168316,42,7,10,13
+Manual Instructions - General Relaxed Aggregate,0.7777777777777778,0.5909090909090909,0.65,0.6190476190476191,13,9,7,43
+Manual Instructions - General Matching Aggregate,0.7777777777777778,1.0,0.7777777777777778,0.875,56,0,16,0
+Manual Instructions - Gender Bias Type,0.8611111111111112,0.42857142857142855,0.75,0.5454545454545454,6,8,2,56
+Manual Instructions - Disability Bias Type,1.0,1.0,1.0,1.0,1,0,0,71
+Manual Instructions - Race Bias Type,0.9583333333333334,0.6666666666666666,0.5,0.5714285714285714,2,1,2,67
+Manual Instructions - Religion Bias Type,0.9583333333333334,1.0,0.5,0.6666666666666666,3,0,3,66
+Manual Instructions - Sexual Bias Type,0.9861111111111112,1.0,0.5,0.6666666666666666,1,0,1,70
+Manual Instructions - No Bias,0.7777777777777778,0.8913043478260869,0.7884615384615384,0.8367346938775511,41,5,11,15
+Examples of Every Type Less Detailed Instructions - General Relaxed Aggregate,0.75,0.5357142857142857,0.75,0.625,15,13,5,39
+Examples of Every Type Less Detailed Instructions - General Matching Aggregate,0.75,1.0,0.75,0.8571428571428571,54,0,18,0
+Examples of Every Type Less Detailed Instructions - Gender Bias Type,0.8888888888888888,0.5,0.75,0.6,6,6,2,58
+Examples of Every Type Less Detailed Instructions - Disability Bias Type,0.9722222222222222,0.3333333333333333,1.0,0.5,1,2,0,69
+Examples of Every Type Less Detailed Instructions - Race Bias Type,0.9305555555555556,0.4,0.5,0.4444444444444444,2,3,2,65
+Examples of Every Type Less Detailed Instructions - Religion Bias Type,0.9583333333333334,0.7142857142857143,0.8333333333333334,0.7692307692307693,5,2,1,64
+Examples of Every Type Less Detailed Instructions - Sexual Bias Type,0.9861111111111112,1.0,0.5,0.6666666666666666,1,0,1,70
+Examples of Every Type Less Detailed Instructions - No Bias,0.7638888888888888,0.926829268292683,0.7307692307692307,0.8172043010752689,38,3,14,17
+Not Detailed Instructions Balanced Examples - General Relaxed Aggregate,0.75,0.5384615384615384,0.7,0.6086956521739131,14,12,6,40
+Not Detailed Instructions Balanced Examples - General Matching Aggregate,0.7361111111111112,1.0,0.7361111111111112,0.848,53,0,19,0
+Not Detailed Instructions Balanced Examples - Gender Bias Type,0.8888888888888888,0.5,0.875,0.6363636363636364,7,7,1,57
+Not Detailed Instructions Balanced Examples - Disability Bias Type,0.9583333333333334,0.25,1.0,0.4,1,3,0,68
+Not Detailed Instructions Balanced Examples - Race Bias Type,0.9305555555555556,0.4,0.5,0.4444444444444444,2,3,2,65
+Not Detailed Instructions Balanced Examples - Religion Bias Type,0.9583333333333334,1.0,0.5,0.6666666666666666,3,0,3,66
+Not Detailed Instructions Balanced Examples - Sexual Bias Type,0.9861111111111112,1.0,0.5,0.6666666666666666,1,0,1,70
+Not Detailed Instructions Balanced Examples - No Bias,0.7361111111111112,0.8837209302325582,0.7307692307692307,0.8,38,5,14,15
+Balanced Examples - General Relaxed Aggregate,0.7777777777777778,0.5666666666666667,0.85,0.68,17,13,3,39
+Balanced Examples - General Matching Aggregate,0.7638888888888888,1.0,0.7638888888888888,0.8661417322834646,55,0,17,0
+Balanced Examples - Gender Bias Type,0.875,0.4666666666666667,0.875,0.6086956521739131,7,8,1,56
+Balanced Examples - Disability Bias Type,0.9583333333333334,0.25,1.0,0.4,1,3,0,68
+Balanced Examples - Race Bias Type,0.9444444444444444,0.5,0.75,0.6,3,3,1,65
+Balanced Examples - Religion Bias Type,0.9861111111111112,1.0,0.8333333333333334,0.9090909090909091,5,0,1,66
+Balanced Examples - Sexual Bias Type,0.9861111111111112,1.0,0.5,0.6666666666666666,1,0,1,70
+Balanced Examples - No Bias,0.7638888888888888,0.9487179487179487,0.7115384615384616,0.8131868131868132,37,2,15,18
+Balanced Examples Less Detailed Instructions - General Relaxed Aggregate,0.7361111111111112,0.5161290322580645,0.8,0.6274509803921569,16,15,4,37
+Balanced Examples Less Detailed Instructions - General Matching Aggregate,0.7222222222222222,1.0,0.7222222222222222,0.8387096774193549,52,0,20,0
+Balanced Examples Less Detailed Instructions - Gender Bias Type,0.8611111111111112,0.42857142857142855,0.75,0.5454545454545454,6,8,2,56
+Balanced Examples Less Detailed Instructions - Disability Bias Type,0.9583333333333334,0.25,1.0,0.4,1,3,0,68
+Balanced Examples Less Detailed Instructions - Race Bias Type,0.9305555555555556,0.42857142857142855,0.75,0.5454545454545454,3,4,1,64
+Balanced Examples Less Detailed Instructions - Religion Bias Type,0.9861111111111112,1.0,0.8333333333333334,0.9090909090909091,5,0,1,66
+Balanced Examples Less Detailed Instructions - Sexual Bias Type,0.9861111111111112,1.0,0.5,0.6666666666666666,1,0,1,70
+Balanced Examples Less Detailed Instructions - No Bias,0.6944444444444444,0.9166666666666666,0.6346153846153846,0.75,33,3,19,17
+Less Detailed Instructions - General Relaxed Aggregate,0.7777777777777778,0.5625,0.9,0.6923076923076923,18,14,2,38
+Less Detailed Instructions - General Matching Aggregate,0.75,1.0,0.75,0.8571428571428571,54,0,18,0
+Less Detailed Instructions - Gender Bias Type,0.8611111111111112,0.42857142857142855,0.75,0.5454545454545454,6,8,2,56
+Less Detailed Instructions - Disability Bias Type,0.9444444444444444,0.2,1.0,0.3333333333333333,1,4,0,67
+Less Detailed Instructions - Race Bias Type,0.9444444444444444,0.5,1.0,0.6666666666666666,4,4,0,64
+Less Detailed Instructions - Religion Bias Type,0.9861111111111112,1.0,0.8333333333333334,0.9090909090909091,5,0,1,66
+Less Detailed Instructions - Sexual Bias Type,0.9861111111111112,1.0,0.5,0.6666666666666666,1,0,1,70
+Less Detailed Instructions - No Bias,0.7222222222222222,0.9444444444444444,0.6538461538461539,0.7727272727272727,34,2,18,18

@@ -1,0 +1,24 @@
+answer_task:
+  description: >
+    Answer the following user query honestly and accurately.
+    Ensure the answer is accurate and according the instructions in the query.
+
+    LAST ANSWER
+    -----------
+    {last_answer}
+
+    FEEDBACK
+    --------
+    {feedback}
+
+    Adjust the response based on any feedback from the evaluator, ensuring all points raised are explicitly addressed.
+    - Focus on refining clarity and providing a user-friendly experience.
+    - Make sure the solution incorporates any specific feedback points given.
+    - Write out how you are considering the feedback
+    
+    The query to answer is:
+    \n\n{query}.
+  expected_output: JSON with keys "feedback_consideration" and "final_answer". "feedback_consideration" should have reasoning about feedback
+    > received, if there is no feedback, say "No feedback to consider".
+    > "final_answer" should have the accurate answer to the query.
+  agent: bias_agent

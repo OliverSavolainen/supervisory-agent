@@ -46,7 +46,7 @@ merged["unified_label"] = merged.apply(
 
 # Initialize results
 results = {}
-
+# For possible need, all column names of all runs are still kept in comments
 """# Columns for Evaluation Metrics
 eval_columns = [
     "General input + output ref",

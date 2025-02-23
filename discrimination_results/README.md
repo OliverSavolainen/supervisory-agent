@@ -16,8 +16,8 @@ Those results are in the all_scores.csv file. Relaxed Aggregate just checks if s
 
 ## Main script to run
 
-Main command is: python final_general_scores_col.py
+Main command is: python get_metrics.py
 
-To get the results of the best variations, no_specifics.csv should be the input file (bias_results variable). Make sure to specify the eval_columns that you want to evaluate. Otherwise, any exported csv from orq should work unless some responses don't use the JSON format at all.
+To get the results of the best variations, output_files/no_specifics.csv should be the input file (bias_results variable). Make sure to specify the eval_columns that you want to evaluate. Otherwise, any exported csv coming from orq.ai platform should work unless some responses don't use the JSON format at all.
 
 Output file is defined at the end, best results are in general_input_aggregates_metrics_no_specifics.csv currently
